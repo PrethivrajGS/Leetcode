@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
     int dist(vector<int>& a, vector<int>& b) {
@@ -23,8 +20,6 @@ public:
 
         sort(d.begin(), d.end());
 
-        // Check:
-        // 4 equal sides and 2 equal diagonals
         return d[0] > 0 &&
                d[0] == d[1] &&
                d[1] == d[2] &&
